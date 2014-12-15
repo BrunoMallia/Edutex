@@ -16,7 +16,11 @@ public class Conexao {
 	  
 	  
 	  
-	  public static synchronized Conexao getInstance(){
+	  /**
+	   * Método para pegar conexão com banco de dados
+	 * @return
+	 */
+	public static synchronized Conexao getInstance(){
 		  if (instance == null) 
 			  instance = new Conexao();
 			  
@@ -25,7 +29,10 @@ public class Conexao {
 	  
 	  
 	  
-	  private Conexao() {
+	  /**
+	 *  Construtor que popula o objeto de Conexão com o banco de dados 
+	 */
+	private Conexao() {
 		  try {
 				Class.forName("org.postgresql.Driver");
 				
