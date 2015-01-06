@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US"> 
+    <head>
+        <meta charset="UTF8">
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE; IE=edge; chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edut Consultoria - SGCC</title>
+        <script src="../resources/js/modernizr.js"></script>
+        <script src="../resources/js/main.js"></script>
+        <script src="../resources/js/jquery-1.11.1.js"></script>
+        <link href="../resources/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="../resources/imgs/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+       
+    </head>
+<script type="text/javascript">
+  $(document).ready(function(){
+ 
+ 
+   $('ul#submenu_main>li').mouseover(function(){
+        $(this).children('ul.submenu').css({'display':'block'});
+    });
+    
+    $('ul#submenu_main>li').mouseout(function(){
+        $(this).children('ul.submenu').css({'display':'none'});
+    });
+    
+    $("#content div:nth-child(1)").show();
+    $(".abas li:first div").addClass("selected2");
+    $(".aba").click(function(){
+      $(".aba").removeClass("selected2");
+      $(this).addClass("selected2");
+      var indice = $(this).parent().index();
+      indice++;
+      $("#content div").hide();
+      $("#content div:nth-child("+indice+")").show();
+      });
+    $(".aba").hover(
+      function(){$(this).addClass("ativa")},
+      function(){$(this).removeClass("ativa")}
+    );
+ 
+});
+</script>
+    <body bgcolor="#f5f5f5">
+      <header class="header_home">
+        <div class="header_width">
+          <a class="header_logo_system" href="../home/home.html">Edut Consultoria - SGCC</a>
+          <div class="header_blackbar">
+            <img class="header_pieceblack" src="../resources/imgs/pieceblack.png" alt="" />
+            <p>Olá, <span>Raphael</span><br />
+            Empresa Selecionada: <span>YkPnfe</span></p>
+            <a class="bt_exit" href="../login.html">sair</a>
+            <!--<input class="bt_exit" type="button" value="" />-->
+          </div>
+          <div class="header_menu">
+            <ul>
+              <li><a href="gerar_relatorio.html" >Gerar Relatórios</a></li>
+            </ul>
+            <ul id="submenu_main">
+              <li><a class="selected" href="javascript:" >Gerenciar ▼</a>
+                <ul class="submenu">
+                  <li class="submenu_first_lihover"><a class="submenu_first_ahover" href="usuario.html" >Usuário</a></li>
+                  <li><a href="" >Empresa</a></li>
+                  <li class="submenu_removeborder"><a href="" >Ncm</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li><a href="validar_nota_fiscal.html" >Válidar Nota Fiscal</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="main_container_default">
+      <div class="container_default">
+        <div class="TabControl">
+          <div id="header">
+            <ul class="abas">
+              <li>
+                <div class="aba">
+                  <span>Alterar Usuário</span>
+                </div>
+              </li>
+              <li>
+                <div class="aba">
+                  <span>Adicionar Usuário</span>
+                </div>
+              </li>
+              <li>
+                <div class="aba">
+                  <span>Desabilitar/Habilitar Usuários</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="content">
+            <div class="conteudo">
+              <fieldset class="remove_status">
+                <p class="">
+                  <form action="" method="post">
+                  <span>
+                  <input type="text" placeholder="Email" value="Daniel.okamoto@gmail.com">
+                  <input type="text" placeholder="Nome">  
+                  </span>
+                  <span>
+                  <input type="password" placeholder="Senha">
+                  <input type="password" placeholder="Repetir Senha">
+                  </span>
+                  <span>
+                  <select>
+                    <option>Selecionar tipo de usuario</option>
+                  </select>
+                  </span><br />
+                  <span>
+                    <h2>Selecione as Empresas abaixo:</h2><br />
+                      <input type="checkbox" checked/><label>YKPnFe </label>&nbsp;
+                      <input type="checkbox" /><label>Eletricit nFe </label>&nbsp;
+                      <input type="checkbox" checked/><label>Banco do Brasil </label>&nbsp;
+                      <input type="checkbox" /><label>Empresa nFe </label>
+                  </span><br /> 
+                  <span>
+                  <input class="bt_cancel space" type="reset" value="cancelar" onclick="alert('Operação cancelada!');"/>
+                  <input class="bt_save space" type="submit" value="gerar" onclick="alert('Dados alterados com sucesso.');"/>
+                  </span>
+                  </form>
+                </p>
+              </fieldset>
+            </div>
+            <div class="conteudo" style="display: none;">
+              <fieldset class="remove_status">
+                <p class="">
+                  <form action="" method="post">
+                  <span>
+                  <input type="text" placeholder="Email">
+                  <input type="text" placeholder="Nome">  
+                  </span>
+                  <span>
+                  <input type="password" placeholder="Senha">
+                  <input type="password" placeholder="Repetir Senha">
+                  </span>
+                  <span>
+                  <select>
+                    <option>Selecionar tipo de usuario</option>
+                  </select>
+                  </span><br />
+                  <span>
+                    <h2>Selecione as Empresas abaixo:</h2><br />
+                      <input type="checkbox" /><label>YKPnFe </label>&nbsp;
+                      <input type="checkbox" /><label>Eletricit nFe </label>&nbsp;
+                      <input type="checkbox" /><label>Banco do Brasil </label>&nbsp;
+                      <input type="checkbox" /><label>Empresa nFe </label>
+                  </span><br /> 
+                  <span>
+                  <input class="bt_cancel space" type="reset" value="cancelar" onclick="alert('Operação cancelada!');"/>
+                  <input class="bt_save space" type="submit" value="gerar" onclick="alert('Usuário criado com sucesso!');"/>
+                  </span>
+                  </form>
+                </p>
+              </fieldset>
+            </div>
+            <div class="conteudo" style="display: none;">
+              <fieldset class="remove_status">
+                <p class="">
+                  <form action="" method="post">
+                  <span>
+                    <input type="text" placeholder="Email" class="greatmail">
+                  </span>
+                  <p class="">
+                  <input class="bt_cancel space" type="reset" value="cancelar" onclick="alert('Usuário nao encontrado.');"/>
+                  <input class="bt_check space" type="submit" value="gerar" onclick="alert('Nota fiscal necessitará de nota coretiva.');"/>
+                  </p>
+                  </form>
+                </p>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+        
+      <footer class="footer_login">Sistema Gerenciamento de Cosultoria e Contabilidade  -  Versão 1.0  -  Desenvolvido por: Grupo Academico. </footer>
+    </body>
+</html>

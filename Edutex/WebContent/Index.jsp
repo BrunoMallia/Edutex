@@ -4,15 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Exemplo com Struts</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<div align="center">
-		<H1>A autenticacao doi realizada com sucesso</H1>
-		
-		<p />
-		<a href="index.jsp">Voltar ao Índice</a>
-	</div>
+<jsp:forward page="login.do"/>
+
 </body>
 </html>
-

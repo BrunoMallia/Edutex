@@ -4,12 +4,30 @@
 <struts-config>
 	<action-mappings>
 		<action path="/autentica" type="br.com.edutex.form.Login"  scope="request" >
-			<forward name="success" path="/WEB-INF/autenticacao/ok.jsp" />
+			<forward name="success" path="/WEB-INF/home/home.jsp" />
 		</action>
 		
-		<action path="/login" type="br.com.edutex.form.Login"  scope="request" >
-			<forward name="success" path="/WEB-INF/login.jsp" />
-		</action>
+		<action path="/login" type="org.apache.struts.actions.ForwardAction" 
+			 parameter="/WEB-INF/login.jsp" />
+			 
+		<action path="/menu" type="org.apache.struts.actions.ForwardAction"
+		parameter="/WEB-INF/pages/menu.jsp" ></action>	 
+		
+		<action path="/validarNota" type="org.apache.struts.actions.ForwardAction"
+		parameter="/WEB-INF/pages/validar_nota_fiscal.jsp" ></action>
+		
+		<action path="/gerarRelatorio" type="org.apache.struts.actions.ForwardAction"
+		parameter="/WEB-INF/pages/gerar_relatorio.jsp" ></action>
+		
+		<action path="/tipoNotaFiscal" type="org.apache.struts.actions.ForwardAction"
+		parameter="/WEB-INF/pages/tipo_nota_fiscal.jsp" ></action>
+		
+		<action path="/usuarios" type="org.apache.struts.actions.ForwardAction"
+		parameter="/WEB-INF/pages/usuario.jsp" ></action>
+		
+		<action path="/alterarUsuarios" type="org.apache.struts.actions.ForwardAction"
+		parameter="/WEB-INF/pages/alterar_usuario.jsp" ></action>
+		
 	</action-mappings>
 </struts-config>
 

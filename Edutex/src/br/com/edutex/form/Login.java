@@ -14,6 +14,8 @@ public class Login extends Action {
 	public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		
+		/*LÓGICA PARA ATENTICAÇÃO DE USUÁRIO E SENHA*/
+		
 		return (mapping.findForward("success"));
 	
 	
