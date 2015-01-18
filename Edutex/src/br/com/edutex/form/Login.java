@@ -12,7 +12,7 @@ import org.apache.struts.action.ActionMapping;
 
 public class Login extends Action {
 	
-	  private Logger log = null;
+	  private Logger log =  Logger.getRootLogger();
 	  
 	  
 	
@@ -20,8 +20,10 @@ public class Login extends Action {
 	public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request,
 			HttpServletResponse response) throws Exception {
 		
-		log = Logger.getRootLogger();
-		log.error("TESTE ERROR LOG4J");
+		
+		log.error("TESTE ERRO LOG4J");
+		
+		log.info("TESTE INFO LOG4J");
 		
 		/*LÓGICA PARA ATENTICAÇÃO DE USUÁRIO E SENHA*/
 		
