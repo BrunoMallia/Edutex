@@ -1,5 +1,7 @@
 package br.com.edutex.form;
 
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -23,7 +25,8 @@ public class Login extends Action {
 		
 		log.error("TESTE ERRO LOG4J");
 		
-		log.info("TESTE INFO LOG4J");
+		EntityManagerFactory factory = Persistence.
+		          createEntityManagerFactory("clientes");
 		
 		/*LÓGICA PARA ATENTICAÇÃO DE USUÁRIO E SENHA*/
 		
