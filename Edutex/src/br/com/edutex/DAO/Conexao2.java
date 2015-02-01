@@ -15,7 +15,7 @@ public class Conexao2 {
 		  //Populando objeto para teste de persistência
 		  
 		  Cliente c = new Cliente();
-		 c.setNome("Fulano");
+		 c.setNome("Zuffo");
 		  
 		  
 		  EntityManager manager = factory.createEntityManager();
