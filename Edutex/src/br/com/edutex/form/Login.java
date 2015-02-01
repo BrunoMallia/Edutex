@@ -28,7 +28,7 @@ public class Login extends Action {
 		EntityManagerFactory factory = Persistence.
 		          createEntityManagerFactory("clientes");
 		
-		/*LÓGICA PARA ATENTICAÇÃO DE USUÁRIO E SENHA*/
+		/*LOGICA PARA USUARIO E SENHA*/
 		
 		return (mapping.findForward("success"));
 	
