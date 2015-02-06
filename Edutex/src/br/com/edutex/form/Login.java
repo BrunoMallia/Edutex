@@ -26,7 +26,7 @@ public class Login extends Action {
 		log.error("TESTE ERRO LOG4J");
 		
 		EntityManagerFactory factory = Persistence.
-		          createEntityManagerFactory("clientes");
+		          createEntityManagerFactory("Edutex");
 		
 		/*LÓGICA PARA ATENTICAÇÃO DE USUÁRIO E SENHA*/
 		
