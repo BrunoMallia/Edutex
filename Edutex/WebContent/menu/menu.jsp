@@ -29,7 +29,7 @@
           <a class="header_logo_system" href="../home/home.html">Edut Consultoria - SGCC</a>
           <div class="header_blackbar">
             <img class="header_pieceblack" src="../resources/imgs/pieceblack.png" alt="" />
-            <p>Olá, <span>Raphael</span><br />
+            <p>Olá, <span>Leonardo Spirandio</span><br />
             Empresa Selecionada: <span>YkPnfe</span></p>
             <a class="bt_exit" href="../login.html">sair</a>
             <!--<input class="bt_exit" type="button" value="" />-->
